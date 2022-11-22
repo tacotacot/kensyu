@@ -39,16 +39,16 @@
                   139.69143377086, 35.68993508559, 0,
                   139.69184361318, 35.68999687609, 0,
                   139.69203616751, 35.68909180654, 0,]),
-              heightRefererence: Cesium.HeightReference.RELATIVE_TO_GROUNO,
-              extrudedHeight: 200.0
-              extrudedHeightReference: Cesium.HeightReference.RELATIVE_To_ground
+              heightRefererence: Cesium.HeightReference.RELATIVE_TO_GROUND,
+              extrudedHeight: 200.0,
+              extrudedHeightReference: Cesium.HeightReference.RELATIVE_TO_GROUND,
               material : Cesium.Color.RED.withAlpha(0.5),
              outline : true,
              outlineColor : Cesium.Color.BLACK
-          ]
-     }):
-    viewer.camera.flyTo(
-        destination:Cesium,Cartesian3.fromDegress(139.691734969185,35.6895913446065,1000.0),
+          }
+     });
+    viewer.camera.flyTo({
+        destination: Cesium.Cartesian3.fromDegrees(139.691734969185,35.689513446065,1000.0),
     </script>
   </body>
 </html>
