@@ -11,9 +11,9 @@
       content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
     />
     <title>Hello World!</title>
-    <script src="../Build/CesiumUnminified/Cesium.js"></script>
+    <script src="../Build/Cesium/Cesium.js"></script>
     <style>
-      @import url(../Build/CesiumUnminified/Widgets/widgets.css);
+      @import url(../Build/Cesium/Widgets/widgets.css);
       html,
       body,
       #cesiumContainer {
@@ -32,18 +32,18 @@
 
       var point = viewer.entities.add({
           name:"国立競技場",
-          description:"〒160-0013 東京都新宿区霞ヶ丘町10-1",
+          description:"〒160-0013 東京都新宿区霞ヶ丘町１０−１",
           position : Cesium.Cartesian3.fromDegrees(139.7145,35.6779,0),
           point : {
               pixelSize : 10,
               color : Cesium.Color.BLUE
           }
       });
+
       viewer.camera.flyTo({
-         destination: Cesium.Cartesian3.fromDegrees(139.7145,35.6779,3000.0)
+          destination: Cesium.Cartesian3.fromDegrees(139.7145,35.6779,3000.0)
       });
+
     </script>
   </body>
 </html>
-
-
