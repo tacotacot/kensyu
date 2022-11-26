@@ -39,6 +39,27 @@
               color : Cesium.Color.BLUE
           }
       });
+
+      var point = viewer.entities.add({
+          name:"千駄ヶ谷駅",
+          description:"〒151-0051　東京都渋谷区千駄ヶ谷１丁目３５",
+          position : Cesium.Cartesian3.fromDegrees(139.7113,35.6812,0),
+          point : {
+              pixelSize : 10,
+              color : Cesium.Color.RED
+          }
+      });
+
+      var point = viewer.entities.add({
+          name:"信濃駅駅",
+          description:"〒160-0016　東京都新宿区信濃町３４",
+          position : Cesium.Cartesian3.fromDegrees(139.7203,35.6801,0),
+          point : {
+              pixelSize : 10,
+              color : Cesium.Color.fromBytes(255,255,0,255)
+          }
+      });
+
       viewer.camera.flyTo({
           destination : Cesium.Cartesian3.fromDegrees(139.7145,35.6779,3000,0)
       });
