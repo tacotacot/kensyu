@@ -49,6 +49,30 @@
               material : Cesium.Color.RED,
           }
       });
+
+      var redLine = viewer.entities.add({
+          name:"江戸川",
+          description:"ここは江戸川です",
+          polyline : {
+              positions : Cesium.Cartesian3.fromDegreesArrayHeights([
+                  139.9502,35.6708,0,
+                  139.9323,35.6976,0,
+                  139.9168,35.7062,0,
+                  139.8975,35.7254,0,
+                  139.8976,35.7316,0,
+                  139.9009,35.7370,0,
+                  139.8986,35.7454,0,
+                  139.8919,35.7488,0,
+                  139.8832,35.7583,0,
+                  139.8822,35.7630,0,
+                  139.8794,35.7670,0,
+                  139.8808,35.7719,0,
+                  139.8937,35.7797,0]),
+              width : 5,
+              material : Cesium.Color.fromBytes(0,255,255,255)
+          }
+      });
+
       viewer.camera.fiyTo({
           destination: Cesium.Cartesian3.fromDegrees(139.85548415860978,35.70728274976147,20000,0),
       });
