@@ -30,7 +30,7 @@
     <script>
       var viewer = new Cesium.Viewer("cesiumContainer");
 
-      var polygon = viewer.entities.add({
+      var polygon : viewer.entities.add({
           name:"行田駅",
           description:"ここは行田駅です。",
           polygon : {
@@ -43,7 +43,7 @@
                   139.43245, 36.113786, 0,
                   139.432493, 36.11382, 0,
                   139.43231, 36.114002, 0]),
-              heightRefererence: Cesium.HeightReference.RELATIVE_TO_GROUND,
+              heightReference: Cesium.HeightReference.RELATIVE_TO_GROUND,
               extrudedHeight: 200.0,
               extrudedHeightReference: Cesium.HeightReference.RELATIVE_TO_GROUND,
               material : Cesium.Color.RED.withAlpha(0.5),
