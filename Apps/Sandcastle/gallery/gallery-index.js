@@ -1,6 +1,6 @@
 // This file is automatically rebuilt by the Cesium build process.
-const hello_world_index = 107;
-const VERSION = '1.99';
+const hello_world_index = 110;
+const VERSION = '1.105.1';
 const gallery_demos = [{
   "name": "3D Models",
   "isNew": false,
@@ -93,6 +93,10 @@ const gallery_demos = [{
   "name": "3D Tiles Terrain Classification",
   "isNew": false,
   "img": "3D Tiles Terrain Classification.jpg"
+}, {
+  "name": "Aerometrex San Francisco",
+  "isNew": false,
+  "img": "Aerometrex San Francisco.jpg"
 }, {
   "name": "Ambient Occlusion",
   "isNew": false,
@@ -422,6 +426,14 @@ const gallery_demos = [{
   "isNew": false,
   "img": "Google Earth Enterprise.jpg"
 }, {
+  "name": "Google Photorealistic 3D Tiles",
+  "isNew": true,
+  "img": "Google Photorealistic 3D Tiles.jpg"
+}, {
+  "name": "Google Photorealistic 3D Tiles with Building Insert",
+  "isNew": true,
+  "img": "Google Photorealistic 3D Tiles with Building Insert.jpg"
+}, {
   "name": "HTML Overlays",
   "isNew": false,
   "img": "HTML Overlays.jpg"
@@ -439,15 +451,15 @@ const gallery_demos = [{
   "img": "High Dynamic Range.jpg"
 }, {
   "name": "I3S 3D Object Layer",
-  "isNew": true,
+  "isNew": false,
   "img": "I3S 3D Object Layer.jpg"
 }, {
   "name": "I3S Feature Picking",
-  "isNew": true,
+  "isNew": false,
   "img": "I3S Feature Picking.jpg"
 }, {
   "name": "I3S IntegratedMesh Layer",
-  "isNew": true,
+  "isNew": false,
   "img": "I3S IntegratedMesh Layer.jpg"
 }, {
   "name": "Image-Based Lighting",
