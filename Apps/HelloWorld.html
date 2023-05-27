@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Use correct character set. -->
+    <meta charset="utf-8" />
+    <!-- Tell IE to use the latest, best version. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Make the application on mobile take up the full browser screen and disable user scaling. -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+    <title>Hello World!</title>
+    <script src="../Build/CesiumUnminified/Cesium.js"></script>
+    <style>
+      @import url(../Build/CesiumUnminified/Widgets/widgets.css);
+      html,
+      body,
+      #cesiumContainer {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cesiumContainer"></div>
+    <script>
+      var viewer = new Cesium.Viewer("cesiumContainer");
+
+      var polygon = viewer.entities.add({
+          name:"行田駅",
+          description:"ここは行田駅です。",
+          polygon : {
+              hierarchy : Cesium.Cartesian3.fromDegreesArrayHeights([
+                  139.432067, 36.113871, 0,
+                  139.432201, 36.113714, 0,
+                  139.432348, 36.113794, 0,
+                  139.432434, 36.113738, 0,
+                  139.432471, 36.11376, 0,
+                  139.43245, 36.113786, 0,
+                  139.432493, 36.11382, 0,
+                  139.43231, 36.114002, 0,]),
+              heightRefererence: Cesium.HeightReference.RELATIVE_TO_GROUND,
+              extrudedHeight: 6.0,
+              extrudedHeightReference: Cesium.HeightReference.RELATIVE_TO_GROUND,
+              material : Cesium.Color.RED.withAlpha(0.5),
+             outline : true,
+             outlineColor : Cesium.Color.BLACK
+          }
+     });
+      var polygon = viewer.entities.add({
+          name:"行田市立泉小学校",
+          description:"ここは行田市立泉小学校です。",
+          polygon : {
+              hierarchy : Cesium.Cartesian3.fromDegreesArrayHeights([
+                  139.446306, 36.122041, 0,
+                  139.446022, 36.121781, 0,
+                  139.446215, 36.121651, 0,
+                  139.446295, 36.121742, 0,
+                  139.446381, 36.121677, 0,
+                  139.446311, 36.121612, 0,
+                  139.446483, 36.121508, 0,
+                  139.446343, 36.121343, 0,
+                  139.44592, 36.121343, 0,
+                  139.445941, 36.121265, 0,
+                  139.446263, 36.121265, 0,
+                  139.446429, 36.121161, 0,
+                  139.446483, 36.121209, 0,
+                  139.446397, 36.121295, 0,
+                  139.446547, 36.121469, 0,
+                  139.446767, 36.121321, 0,
+                  139.446853, 36.121386, 0,
+                  139.446343, 36.121763, 0,
+                  139.446483, 36.121919, 0,]),
+              heightRefererence: Cesium.HeightReference.RELATIVE_TO_GROUND,
+              extrudedHeight: 12.0,
+              extrudedHeightReference: Cesium.HeightReference.RELATIVE_TO_GROUND,
+              material : Cesium.Color.GREEN.withAlpha(0.5),
+             outline : true,
+             outlineColor : Cesium.Color.BLACK
+          }
+     });
+    viewer.camera.flyTo({
+        destination: Cesium.Cartesian3.fromDegrees(139.4345695333031, 36.11252354531621,97.65720461211495),
+        orientation : {
+            heading : Cesium.Math.toRadians(305.0),
+            pitch : Cesium.Math.toRadians(-23.0),
+            roll : 0.0
+        }
+     });
+    </script>
+  </body>
+</html>
