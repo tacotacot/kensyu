@@ -51,6 +51,49 @@
              outlineColor : Cesium.Color.BLACK
           }
      });
+      var polygon = viewer.entities.add({
+          name:"行田市立泉小学校",
+          description:"ここは行田市立泉小学校です。",
+          polygon : {
+              hierarchy : Cesium.Cartesian3.fromDegreesArrayHeights([
+                  139.446381, 36.121677, 0,
+                  139.446311, 36.121612, 0,
+                  139.446483, 36.121508, 0,
+                  139.446343, 36.121343, 0,
+                  139.44592, 36.121343, 0,
+                  139.445941, 36.121265, 0,
+                  139.446263, 36.121265, 0,
+                  139.446429, 36.121161, 0,
+                  139.446483, 36.121209, 0,
+                  139.446397, 36.121295, 0,
+                  139.446547, 36.121469, 0,
+                  139.446767, 36.121321, 0,
+                  139.446853, 36.121386, 0,]),
+              heightRefererence: Cesium.HeightReference.RELATIVE_TO_GROUND,
+              extrudedHeight: 12.0,
+              extrudedHeightReference: Cesium.HeightReference.RELATIVE_TO_GROUND,
+              material : Cesium.Color.GREEN.withAlpha(0.5),
+             outline : true,
+             outlineColor : Cesium.Color.BLACK
+          }
+     });
+      var polygon = viewer.entities.add({
+          name:"行田市立泉小学校体育館",
+          description:"ここは行田市立泉小学校体育館です。",
+          polygon : {
+              hierarchy : Cesium.Cartesian3.fromDegreesArrayHeights([
+                  139.446306, 36.122041, 0,
+                  139.446022, 36.121781, 0,
+                  139.446215, 36.121651, 0,
+                  139.446483, 36.121919, 0,]),
+              heightRefererence: Cesium.HeightReference.RELATIVE_TO_GROUND,
+              extrudedHeight: 3.0,
+              extrudedHeightReference: Cesium.HeightReference.RELATIVE_TO_GROUND,
+              material : Cesium.Color.GREEN.withAlpha(0.5),
+             outline : true,
+             outlineColor : Cesium.Color.BLACK
+          }
+     });
     viewer.camera.flyTo({
         destination: Cesium.Cartesian3.fromDegrees(139.4345695333031, 36.11252354531621,97.65720461211495),
         orientation : {

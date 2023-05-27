@@ -94,6 +94,23 @@
              outlineColor : Cesium.Color.BLACK
           }
      });
+      var polygon = viewer.entities.add({
+          name:"太井公民館",
+          description:"ここは太井公民館です。",
+          polygon : {
+              hierarchy : Cesium.Cartesian3.fromDegreesArrayHeights([
+                  139.434571, 36.12042, 0,
+                  139.434357, 36.12032, 0,
+                  139.434443, 36.120221, 0,
+                  139.434646, 36.120312, 0,]),
+              heightRefererence: Cesium.HeightReference.RELATIVE_TO_GROUND,
+              extrudedHeight: 6.0,
+              extrudedHeightReference: Cesium.HeightReference.RELATIVE_TO_GROUND,
+              material : Cesium.Color.GREEN.withAlpha(0.5),
+             outline : true,
+             outlineColor : Cesium.Color.BLACK
+          }
+     });
     viewer.camera.flyTo({
         destination: Cesium.Cartesian3.fromDegrees(139.4345695333031, 36.11252354531621,97.65720461211495),
         orientation : {
