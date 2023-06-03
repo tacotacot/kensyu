@@ -170,6 +170,31 @@
              outlineColor : Cesium.Color.BLACK
           }
      });
+      var polygon = viewer.entities.add({
+          name:"行田市立西小学校",
+          description:"ここは行田市立西小学校です。",
+          polygon : {
+              hierarchy : Cesium.Cartesian3.fromDegreesArrayHeights([
+                  139.441475, 36.129838, 0,
+                  139.441459, 36.129691, 0,
+                  139.441738, 36.129665, 0,
+                  139.441727, 36.129461, 0,
+                  139.44154, 36.129465, 0,
+                  139.441529, 36.129361, 0,
+                  139.442114, 36.129327, 0,
+                  139.44214, 36.12947, 0,
+                  139.441829, 36.129465, 0,
+                  139.44184, 36.129665, 0,
+                  139.442371, 36.129643, 0,
+                  139.442368, 36.129792, 0,]),
+              heightRefererence: Cesium.HeightReference.RELATIVE_TO_GROUND,
+              extrudedHeight: 3.0,
+              extrudedHeightReference: Cesium.HeightReference.RELATIVE_TO_GROUND,
+              material : Cesium.Color.GREEN.withAlpha(0.5),
+             outline : true,
+             outlineColor : Cesium.Color.BLACK
+          }
+     });
     viewer.camera.flyTo({
         destination: Cesium.Cartesian3.fromDegrees(139.4345695333031, 36.11252354531621,97.65720461211495),
         orientation : {
