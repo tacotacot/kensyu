@@ -111,6 +111,23 @@
              outlineColor : Cesium.Color.BLACK
           }
      });
+      var polygon = viewer.entities.add({
+          name:"行田市立西中学校体育館",
+          description:"ここは行田市立西中学校体育館です。",
+          polygon : {
+              hierarchy : Cesium.Cartesian3.fromDegreesArrayHeights([
+                  139.444694, 36.128779, 0,
+                  139.444689, 36.128488, 0,
+                  139.444914, 36.128488, 0,
+                  139.444914, 36.128774, 0,]),
+              heightRefererence: Cesium.HeightReference.RELATIVE_TO_GROUND,
+              extrudedHeight: 3.0,
+              extrudedHeightReference: Cesium.HeightReference.RELATIVE_TO_GROUND,
+              material : Cesium.Color.GREEN.withAlpha(0.5),
+             outline : true,
+             outlineColor : Cesium.Color.BLACK
+          }
+     });
     viewer.camera.flyTo({
         destination: Cesium.Cartesian3.fromDegrees(139.4345695333031, 36.11252354531621,97.65720461211495),
         orientation : {
